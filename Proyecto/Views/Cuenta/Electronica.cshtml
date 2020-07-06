@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Electronica";
+    Layout = null;
+}
+
+<div class="form-group">
+    <label>Metodo de Pago</label>
+    <select class="form-control" name="MetodoPagoId">
+        <option value="value">Seleccione Metodo de Pago</option>
+        @foreach (var item in ViewBag.MetodoPago)
+        {
+            <option value="@item.IdMetodoPago">@item.Nombre</option>
+        }
+    </select>
+</div>
+<div class="form-group">
+    <label>Nombre</label>
+    <input type="text" class="form-control" name="Nombre" value="@Model.Nombre" />
+</div>
+<div>
+    <label>Saldo Inicial</label>
+    <input type="text" class="form-control" name="SaldoInicial" value="@Model.SaldoInicial" />
+</div>
+<div>
+    <label>Concepto</label>
+    <input type="text" class="form-control" name="Concepto" value="@Model.Concepto" />
+</div>
+

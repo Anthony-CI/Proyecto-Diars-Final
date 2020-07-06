@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/main.js"></script>
+
+
+
+@foreach (var item in Model)
+{
+    <h1>@item.IdUsuario - @item.NombreUsuario - @item.Contraseña</h1>
+
+}
+
+<body>
+    <select id="seleccion" onchange="ddlselect();">
+        <option>seleccione deporte</option>
+        <option>Rugby</option>
+        <option>cricket</option>
+        <option>natacion</option>
+        <option>volleyball</option>
+    </select>
+    <input type="text" id="valorinput" />
+    <div id="cuerpo">
+
+    </div>
+</body>
+
+
+
+

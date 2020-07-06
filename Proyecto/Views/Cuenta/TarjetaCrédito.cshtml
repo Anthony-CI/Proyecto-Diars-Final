@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "TarjetaCrédito";
+    Layout = null;
+}
+
+<div class="form-group">
+    <label>Entidad Emisora</label>
+    <select class="form-control" name="EntidadEmidoraId">
+        <option value="value">Seleccione Entidad Emisora</option>
+        @foreach (var item in ViewBag.EntidadEmisora)
+        {
+            <option value="@item.IdEntidadEmidora">@item.Nombre</option>
+        }
+    </select>
+</div>
+
+<div class="form-group">
+    <label>Entidad</label>
+    <input type="text" class="form-control" name="Entidad" value="@Model.Entidad" />
+</div>
+<div class="form-group">
+    <label>Numero de Tarjeta</label>
+    <input type="text" class="form-control" name="NumeroTarjeta" value="@Model.NumeroTarjeta" />
+</div>
+<div class="form-group">
+    <label>Día de Cierre</label>
+    <input type="text" class="form-control" name="DiaCierre" value="@Model.DiaCierre" />
+</div>
+<div class="form-group">
+    <label>Día de Pago</label>
+    <input type="text" class="form-control" name="DiaPago" value="@Model.DiaPago" />
+</div>
+<div class="form-group">
+    <label>Nombre</label>
+    <input type="text" class="form-control" name="Nombre" value="@Model.Nombre" />
+</div>
+<div class="form-group">
+    <label>Límite de Crédito</label>
+    <input type="text" class="form-control" name="LimiteCredito" value="@Model.LimiteCredito" />
+</div>
+<div>
+    <label>Saldo Inicial</label>
+    <input type="text" class="form-control" name="SaldoInicial" value="@Model.SaldoInicial" />
+</div>
+<div>
+    <label>Concepto</label>
+    <input type="text" class="form-control" name="Concepto" value="@Model.Concepto" />
+</div>
+
+
+
+
+

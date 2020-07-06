@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Crear";
+    
+}
+
+<h1>Agregar Cuenta</h1>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/main.js"></script>
+
+<form action="/Cuenta/Crear" method="post">
+
+
+
+    <div class="form-group">
+        <label>Tipo Cuenta</label>
+        <select id="seleccion" onchange="ddlselect();" class="form-control" name="TipoCuentaId">
+            <option value="value">Seleccione Tipo Cuenta</option>
+            @foreach (var item in ViewBag.TipoCuenta)
+            {
+                <option value="@item.IdTipoCuenta">@item.Nombre</option>
+            }
+        </select>
+        <input type="hidden" id="valorinput" />
+    </div>
+    <div id="cuerpo">
+
+    </div>
+
+
+    <div class="form-group">
+        <button class="btn btn-primary">Guardar</button>
+    </div>
+</form>
+

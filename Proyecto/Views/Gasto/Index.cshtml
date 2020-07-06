@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div>
+    <a class="btn btn-primary" href="/Gasto/Crear?cuentaId=@Model.IdCuenta" role="button">Agregar Gasto</a>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Monto</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var gasto in Model.Gastos)
+            {
+            <tr>
+                <td>@gasto.IdGasto</td>
+                <td>@gasto.Nombre</td>
+                <td>@gasto.Monto</td>
+
+
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<div class="form-group">
+    <a class="btn btn-primary" href="/cuenta/Index">Cancelar</a>
+</div>
+

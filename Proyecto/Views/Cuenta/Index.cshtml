@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+    <a class="btn btn-primary" href="/Cuenta/Crear" role="button">Crear Cuenta</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+
+            <th scope="col">Tipo Cuenta</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Entidad Emisora</th>
+            <th scope="col">Saldo Inicial</th>
+            <th scope="col">Gastos</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var cuenta in Model)
+        {
+        <tr>
+            <td>@cuenta.IdCuenta</td>
+
+            <td>@cuenta.TipoCuenta.Nombre</td>
+            <td>@cuenta.Nombre</td>
+            <td>@cuenta.EntidadEmidora.Nombre</td>
+            <td>@cuenta.SaldoInicial</td>
+            <td>
+                <a href="/Gasto/index?cuentaId=@cuenta.IdCuenta">Gastos</a>
+
+            </td>
+
+        </tr>
+        }
+    </tbody>
+</table>
