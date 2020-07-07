@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 using Proyecto.DB;
 using Proyecto.Extensions;
 using Proyecto.Models;
@@ -43,14 +45,20 @@ namespace Proyecto.Controllers
         {
             var contex = new AppPruebaContex();
             //var userLogged = HttpContext.Session.Get<Usuario>("SessionLoggedUser");
-
-
             //gasto.Cuenta.UsuarioId = userLogged.IdUsuario;
+            var cuenta = contex.Cuentas
+                .Include(c=>c.Gastos)
+                .FirstOrDefault(c => c.IdCuenta == gasto.CuentaId);
             
+            if (cuenta.SaldoFinal>=gasto.Monto)
+            {
+                contex.Gastos.Add(gasto);
+                contex.SaveChanges();
+                return RedirectToAction("Index", new { cuentaId = gasto.CuentaId });
+            }
+            ViewBag.CuentaId = cuenta.IdCuenta;
+            return View(gasto);
 
-            contex.Gastos.Add(gasto);
-            contex.SaveChanges();
-            return RedirectToAction("Index", new { cuentaId = gasto.CuentaId });
         }
     }
 }

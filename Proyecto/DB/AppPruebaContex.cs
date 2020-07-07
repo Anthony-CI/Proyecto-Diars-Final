@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace Proyecto.DB
 {
     public class AppPruebaContex : DbContext
@@ -14,13 +15,15 @@ namespace Proyecto.DB
         public DbSet<Cuenta> Cuentas { get; set; }
 
         public DbSet<TipoCuenta> TipoCuentas { get; set; }
-        public DbSet<EntidadEmidora> EntidadEmidoras { get; set; }
+        public DbSet<EntidadEmisora> EntidadEmisoras { get; set; }
         public DbSet<MetodoPago> MetodoPagos { get; set; }
         public DbSet<Gasto> Gastos { get; set; }
+        public DbSet<CuentaEntidadEmisora> CuentaEntidadEmisoras { get; set; }
+        public DbSet<CuentaMetodoPago> CuentaMetodoPagos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=Proyecto;Trusted_Connection=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=Proyecto2;Trusted_Connection=True;MultipleActiveResultSets=true");
             
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -33,6 +36,8 @@ namespace Proyecto.DB
             modelBuilder.ApplyConfiguration(new EntidadEmidoraConfiguracion());
             modelBuilder.ApplyConfiguration(new MetodoPagoConfiguracion());
             modelBuilder.ApplyConfiguration(new GastoConfiguracion());
+            modelBuilder.ApplyConfiguration(new CuentaEntidadEmisoraConfiguracion());
+            modelBuilder.ApplyConfiguration(new CuentaMetodoPagoConfiguracion());
         }
     }
 }

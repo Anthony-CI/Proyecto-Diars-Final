@@ -9,7 +9,7 @@ namespace Proyecto.Models
     {
         public int IdGasto { get; set; }
         public string Nombre { get; set; }
-        public int Monto { get; set; }
+        public decimal Monto { get; set; }
         
 
         //relacion con Cuenta

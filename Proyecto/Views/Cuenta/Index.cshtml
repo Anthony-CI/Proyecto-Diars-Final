@@ -1,10 +1,12 @@
 ﻿
+@using System.Linq
+@model List<Proyecto.ViewModels.CuentaViewModel>
 @{
     ViewData["Title"] = "Index";
 }
 
 
-    <a class="btn btn-primary" href="/Cuenta/Crear" role="button">Crear Cuenta</a>
+<a class="btn btn-primary" href="/Cuenta/Crear" role="button">Crear Cuenta</a>
 
 <table class="table">
     <thead>
@@ -14,7 +16,10 @@
             <th scope="col">Tipo Cuenta</th>
             <th scope="col">Nombre</th>
             <th scope="col">Entidad Emisora</th>
+            <th scope="col">Metodo de Págo </th>
             <th scope="col">Saldo Inicial</th>
+            <th scope="col">Saldo Final</th>
+
             <th scope="col">Gastos</th>
 
 
@@ -22,21 +27,26 @@
     </thead>
     <tbody>
 
-        @foreach (var cuenta in Model)
+        @foreach (var cuentaModel in Model)
         {
         <tr>
-            <td>@cuenta.IdCuenta</td>
+            <td>@cuentaModel.Cuenta.IdCuenta</td>
 
-            <td>@cuenta.TipoCuenta.Nombre</td>
-            <td>@cuenta.Nombre</td>
-            <td>@cuenta.EntidadEmidora.Nombre</td>
-            <td>@cuenta.SaldoInicial</td>
+            <td>@cuentaModel.Cuenta.TipoCuenta.Nombre</td>
+            <td>@cuentaModel.Cuenta.Nombre</td>
+            <td>@cuentaModel.EntidadEmisora.Nombre</td>
+            <td>@cuentaModel.MetodoPago.Nombre</td>
+            <td>@cuentaModel.Cuenta.SaldoInicial</td>
+            <td>@cuentaModel.Cuenta.SaldoFinal</td>
             <td>
-                <a href="/Gasto/index?cuentaId=@cuenta.IdCuenta">Gastos</a>
+                <a href="/Gasto/index?cuentaId=@cuentaModel.Cuenta.IdCuenta">Gastos</a>
 
             </td>
 
         </tr>
         }
     </tbody>
+
+
 </table>
+@Model.Aggregate(0m, (total, cuentaActual) => total + cuentaActual.Cuenta.SaldoInicial)

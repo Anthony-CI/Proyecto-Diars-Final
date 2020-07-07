@@ -19,13 +19,8 @@ namespace Proyecto.DB.Configuracion
                 .WithMany(o => o.Cuentas)
                 .HasForeignKey(o => o.TipoCuentaId);
 
-            builder.HasOne(o => o.EntidadEmidora)
-                .WithMany(o => o.Cuentas)
-                .HasForeignKey(o => o.EntidadEmidoraId);
+            
 
-            builder.HasOne(o => o.MetodoPago)
-                .WithMany(o => o.Cuentas)
-                .HasForeignKey(o => o.MetodoPagoId);
         }
     }
 }

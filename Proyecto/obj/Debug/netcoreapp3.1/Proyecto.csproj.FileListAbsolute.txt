@@ -170,8 +170,6 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Proyecto.pdb
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Proyecto.Views.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Proyecto.Views.pdb
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\EntityFramework.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -183,6 +181,7 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -207,7 +206,6 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.CodeDom.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -215,7 +213,6 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Json.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
@@ -278,8 +275,6 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
@@ -304,6 +299,8 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Cuenta\Pasivo.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Cuenta\TarjetaCrédito.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Cuenta\TarjetaDébito.cshtml.g.cs
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Gasto\Crear.cshtml.g.cs
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Gasto\Index.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -320,5 +317,3 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.pdb
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.genruntimeconfig.cache
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Gasto\Index.cshtml.g.cs
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Gasto\Crear.cshtml.g.cs

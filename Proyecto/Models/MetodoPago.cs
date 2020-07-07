@@ -11,6 +11,6 @@ namespace Proyecto.Models
         public string Nombre { get; set; }
 
         //crear la relacion con cuenta
-        public List<Cuenta> Cuentas { get; set; }
+        public List<CuentaMetodoPago> CuentaMetodoPago { get; set; }
     }
 }

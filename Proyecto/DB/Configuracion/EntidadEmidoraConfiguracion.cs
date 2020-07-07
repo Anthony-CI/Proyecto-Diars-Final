@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace Proyecto.DB.Configuracion
 {
-    public class EntidadEmidoraConfiguracion : IEntityTypeConfiguration<EntidadEmidora>
+    public class EntidadEmidoraConfiguracion : IEntityTypeConfiguration<EntidadEmisora>
     {
-        public void Configure(EntityTypeBuilder<EntidadEmidora> builder)
+        public void Configure(EntityTypeBuilder<EntidadEmisora> builder)
         {
-            builder.ToTable("EntidadEmidora");
-            builder.HasKey(o => o.IdEntidadEmidora);
+            builder.ToTable("EntidadEmisora");
+            builder.HasKey(o => o.IdEntidadEmisora);
             builder.Property(o => o.Nombre).HasColumnName("Nombre");
         }
     }
