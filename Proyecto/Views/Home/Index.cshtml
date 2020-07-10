@@ -1,32 +1,150 @@
 ﻿@{
-    Layout = null;
-}
-
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/main.js"></script>
-
-
-
-@foreach (var item in Model)
-{
-    <h1>@item.IdUsuario - @item.NombreUsuario - @item.Contraseña</h1>
 
 }
 
-<body>
-    <select id="seleccion" onchange="ddlselect();">
-        <option>seleccione deporte</option>
-        <option>Rugby</option>
-        <option>cricket</option>
-        <option>natacion</option>
-        <option>volleyball</option>
-    </select>
-    <input type="text" id="valorinput" />
-    <div id="cuerpo">
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="btn btn-primary" href="/auth/login">Sign In</a>
+        
 
     </div>
-</body>
+</nav>
+
+
+<header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h1 class="mb-5">Welcome</h1>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-screen-desktop m-auto text-primary"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-layers m-auto text-primary"></i>
+                    </div>
+                    <h3>Bootstrap 4 Ready</h3>
+                    <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="icon-check m-auto text-primary"></i>
+                    </div>
+                    <h3>Easy to Use</h3>
+                    <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+@*<div class="container">
+        <div class="row">
+            <div class="col-xl-2">
+                <p>Hola</p>
+            </div>
+            <div class="col-xl-2">
+                <p>Hola</p>
+            </div>
+            <div class="col-xl-8">
+                <p>Hola</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="card-body">
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trident</td>
+                    <td>
+                        Internet
+                        Explorer 4.0
+                    </td>
+                    <td>Win 95+</td>
+                    <td> 4</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>
+                        Internet
+                        Explorer 5.0
+                    </td>
+                    <td>Win 95+</td>
+                    <td>5</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>
+                        Internet
+                        Explorer 5.5
+                    </td>
+                    <td>Win 95+</td>
+                    <td>5.5</td>
+                    <td>A</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>*@
+
+
+
+
 
 
 

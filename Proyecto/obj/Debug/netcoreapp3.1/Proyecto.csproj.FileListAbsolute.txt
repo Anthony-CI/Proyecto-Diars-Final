@@ -279,8 +279,6 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.csprojAssemblyReference.cache
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.csproj.CoreCompileInputs.cache
-C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.RazorAssemblyInfo.cache
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.RazorAssemblyInfo.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.AssemblyInfoInputs.cache
@@ -306,6 +304,8 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Transferencias\Crear.cshtml.g.cs
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Transferencias\Index.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.RazorTargetAssemblyInfo.cache
@@ -317,3 +317,6 @@ C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.dll
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.pdb
 C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.genruntimeconfig.cache
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Proyecto.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alciS\Desktop\Proyecto-20200705T210605Z-001\Proyecto\Proyecto\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Crear.cshtml.g.cs

@@ -178,6 +178,39 @@ namespace Proyecto.Migrations
                     b.ToTable("TipoCuenta");
                 });
 
+            modelBuilder.Entity("Proyecto.Models.Transferencia", b =>
+                {
+                    b.Property<int>("IdTransferencia")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CuentaDestinoId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CuentaIdCuenta")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CuentaOrigenId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Monto")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("IdTransferencia");
+
+                    b.HasIndex("CuentaDestinoId");
+
+                    b.HasIndex("CuentaIdCuenta");
+
+                    b.HasIndex("CuentaOrigenId");
+
+                    b.ToTable("Transferencias");
+                });
+
             modelBuilder.Entity("Proyecto.Models.Usuario", b =>
                 {
                     b.Property<int>("IdUsuario")
@@ -241,6 +274,25 @@ namespace Proyecto.Migrations
                         .WithMany("Gastos")
                         .HasForeignKey("CuentaId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Proyecto.Models.Transferencia", b =>
+                {
+                    b.HasOne("Proyecto.Models.Cuenta", "CuentaDestino")
+                        .WithMany("TransferenciasComoDestino")
+                        .HasForeignKey("CuentaDestinoId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Proyecto.Models.Cuenta", null)
+                        .WithMany("Transferencias")
+                        .HasForeignKey("CuentaIdCuenta");
+
+                    b.HasOne("Proyecto.Models.Cuenta", "CuentaOrigen")
+                        .WithMany("TransferenciasComoOrigen")
+                        .HasForeignKey("CuentaOrigenId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

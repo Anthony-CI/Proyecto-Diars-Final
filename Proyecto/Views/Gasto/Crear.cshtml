@@ -1,30 +1,97 @@
 ﻿
 @{
     ViewData["Title"] = "Crear";
+    //CREAR GASTO
 }
 
-    <form action="/Gasto/Crear" method="post">
-        <input type="hidden" name="CuentaId" value="@ViewBag.CuentaId" />
 
-        <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control" name="Nombre" value="@Model.Nombre" />
+
+
+<header>
+
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+
         </div>
+    </nav>
 
-        <div class="form-group">
-            <label>Monto</label>
-            <input type="text" class="form-control" name="Monto" value="@Model.Monto" />
+    <section class=" features-icons bg-light text-center">
+
+        <div class="container">
+            <div class="row mr-0">
+                <div class="col-md-6">
+                    <form action="/Gasto/Crear" method="post">
+                        <input type="hidden" name="CuentaId" value="@ViewBag.CuentaId" />
+
+                        <div class="row">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" name="Nombre" value="@Model.Nombre" />
+                        </div>
+
+                        <div class="row">
+                            <label>Monto</label>
+                            <input type="text" class="form-control" name="Monto" value="@Model.Monto" />
+                        </div>
+                        @Html.ValidationMessage("SinSaldo")
+                        <p>
+
+                        </p>
+                        <div class="row">
+                            <button class="btn btn-primary">Guardar</button>
+                        </div>
+                        <p>
+
+                        </p>
+                        <div class="row">
+                            <a class="btn btn-primary" href="/Gasto/Index?cuentaId=@ViewBag.CuentaId">Cancelar</a>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <button class="btn btn-primary">Guardar</button>
-        </div>
+    </section>
+</header>
 
 
 
 
 
-        <div class="form-group">
-            <a class="btn btn-primary" href="/Gasto/Index?cuentaId=@ViewBag.CuentaId">Cancelar</a>
-        </div>
-    </form>
+
+
+
+
+
+
+
+
+
+
+@*<form action="/Gasto/Crear" method="post">
+    <input type="hidden" name="CuentaId" value="@ViewBag.CuentaId" />
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" name="Nombre" value="@Model.Nombre" />
+    </div>
+
+    <div class="form-group">
+        <label>Monto</label>
+        <input type="text" class="form-control" name="Monto" value="@Model.Monto" />
+    </div>
+    @Html.ValidationMessage("SinSaldo")
+    <div class="form-group">
+        <button class="btn btn-primary">Guardar</button>
+    </div>
+
+
+
+
+
+    <div class="form-group">
+        <a class="btn btn-primary" href="/Gasto/Index?cuentaId=@ViewBag.CuentaId">Cancelar</a>
+    </div>
+</form>*@
 

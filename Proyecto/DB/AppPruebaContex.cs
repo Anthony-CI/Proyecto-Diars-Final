@@ -20,10 +20,10 @@ namespace Proyecto.DB
         public DbSet<Gasto> Gastos { get; set; }
         public DbSet<CuentaEntidadEmisora> CuentaEntidadEmisoras { get; set; }
         public DbSet<CuentaMetodoPago> CuentaMetodoPagos { get; set; }
-
+        public DbSet<Transferencia> Transferencias { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=Proyecto2;Trusted_Connection=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=Proyecto3;Trusted_Connection=True;MultipleActiveResultSets=true");
             
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,6 +38,7 @@ namespace Proyecto.DB
             modelBuilder.ApplyConfiguration(new GastoConfiguracion());
             modelBuilder.ApplyConfiguration(new CuentaEntidadEmisoraConfiguracion());
             modelBuilder.ApplyConfiguration(new CuentaMetodoPagoConfiguracion());
+            modelBuilder.ApplyConfiguration(new TransferenciaConfiguracion());
         }
     }
 }

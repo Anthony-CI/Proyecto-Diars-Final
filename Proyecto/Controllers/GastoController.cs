@@ -23,6 +23,10 @@ namespace Proyecto.Controllers
             var contex = new AppPruebaContex();
             var model = contex.Cuentas
                 .Include(x => x.Gastos)
+                .Include(x=>x.Transferencias)
+                .Include(x => x.TransferenciasComoDestino)
+                .Include(x => x.TransferenciasComoOrigen)
+
                 .Where(x => x.IdCuenta == cuentaId && x.UsuarioId == userLogged.IdUsuario)
                 .FirstOrDefault();
             return View(model);
@@ -56,6 +60,7 @@ namespace Proyecto.Controllers
                 contex.SaveChanges();
                 return RedirectToAction("Index", new { cuentaId = gasto.CuentaId });
             }
+            ModelState.AddModelError("SinSaldo", "Saldo Insuficiente");
             ViewBag.CuentaId = cuenta.IdCuenta;
             return View(gasto);
 

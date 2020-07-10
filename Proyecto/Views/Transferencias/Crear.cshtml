@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewData["Title"] = "Crear";
+    //Crear Transferencia
+}
+
+
+
+
+<header>
+
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+
+        </div>
+    </nav>
+
+    <section class=" features-icons bg-light text-center">
+
+        <div class="container">
+            <div class="row mr-0">
+                <div class="col-md-6">
+                    <form action="/Transferencias/Crear" method="post">
+                        <input type="hidden" name="CuentaId" value="@ViewBag.CuentaId" />
+
+                        <div class="row">
+                            <label>CuentaOrigen</label>
+                            <select id="seleccion" class="form-control" name="CuentaOrigenId">
+                                <option value="value">Seleccione Cuenta</option>
+                                @foreach (var item in ViewBag.Cuentas)
+                                {
+                                    <option value="@item.IdCuenta">@item.Nombre</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label>Cuenta Destino</label>
+                            <select id="seleccion" class="form-control" name="CuentaDestinoId">
+                                <option value="value">Seleccione Cuenta</option>
+                                @foreach (var item in ViewBag.Cuentas)
+                                {
+                                    <option value="@item.IdCuenta">@item.Nombre</option>
+                                }
+                            </select>
+
+                        </div>
+
+                        <div class="row">
+                            <label>Monto</label>
+                            <input type="text" class="form-control" name="Monto" value="@Model.Monto" />
+                        </div>
+
+                        <div class="row">
+                            <label>Fecha</label>
+                            <input type="text" class="form-control" name="Monto" value="@Model.Fecha" />
+                        </div>
+
+                        @Html.ValidationMessage("SinSaldo")
+                        <p>
+
+                        </p>
+                        <div class="row">
+                            <button class="btn btn-primary">Guardar</button>
+                        </div>
+                        <p>
+
+                        </p>
+                        <div class="row">
+                            <a class="btn btn-primary" href="/Transferencias/Index?cuentaId=@ViewBag.CuentaId">Cancelar</a>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<form action="/Transferencias/Crear" method="post">
+        <input type="hidden" name="CuentaId" value="@ViewBag.CuentaId" />
+
+        <div class="form-group">
+            <label>CuentaOrigen</label>
+            <select id="seleccion" class="form-control" name="CuentaOrigenId">
+                <option value="value">Seleccione Cuenta</option>
+                @foreach (var item in ViewBag.Cuentas)
+                {
+                    <option value="@item.IdCuenta">@item.Nombre</option>
+                }
+            </select>
+
+        </div>
+
+        <div class="form-group">
+            <label>Cuenta Destino</label>
+            <select id="seleccion" class="form-control" name="CuentaDestinoId">
+                <option value="value">Seleccione Cuenta</option>
+                @foreach (var item in ViewBag.Cuentas)
+                {
+                    <option value="@item.IdCuenta">@item.Nombre</option>
+                }
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+            <label>Monto</label>
+            <input type="text" class="form-control" name="Monto" value="@Model.Monto" />
+        </div>
+
+        <div class="form-group">
+            <label>Fecha</label>
+            <input type="text" class="form-control" name="Monto" value="@Model.Fecha" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Guardar</button>
+        </div>
+
+        <div class="form-group">
+            <a class="btn btn-primary" href="/Transferencias/Index?cuentaId=@ViewBag.CuentaId">Cancelar</a>
+        </div>
+    </form>*@
+

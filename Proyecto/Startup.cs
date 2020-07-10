@@ -43,7 +43,7 @@ namespace Proyecto
 
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(120);
+                options.IdleTimeout = TimeSpan.FromMinutes(240);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });

@@ -26,6 +26,8 @@ namespace Proyecto.Controllers
                 .Include(o => o.CuentaEntidadEmisora)
                 .Include(o => o.CuentaMetodoPago)
                 .Include(o=>o.Gastos)
+                .Include(o => o.TransferenciasComoOrigen)
+                .Include(o => o.TransferenciasComoDestino)
                 .Where(o => o.UsuarioId == userLogged.IdUsuario)
                 .ToList();
             var viewModels = new List<CuentaViewModel>();

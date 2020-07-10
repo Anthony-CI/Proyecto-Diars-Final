@@ -1,35 +1,118 @@
 ﻿
 @{
     ViewData["Title"] = "Crear";
-    
+    //CREAR CUENTA
+
 }
 
-<h1>Agregar Cuenta</h1>
+
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/main.js"></script>
 
-<form action="/Cuenta/Crear" method="post">
+
+<header>
+
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+
+        </div>
+    </nav>
+
+    <section class=" features-icons bg-light text-center">
+        
+        <div class="container">
+            <div class="row mr-0">
+                <div class="col-md-6">
+
+                    <form action="/Cuenta/Crear" method="post">
 
 
 
-    <div class="form-group">
-        <label>Tipo Cuenta</label>
-        <select id="seleccion" onchange="ddlselect();" class="form-control" name="TipoCuentaId">
-            <option value="value">Seleccione Tipo Cuenta</option>
-            @foreach (var item in ViewBag.TipoCuenta)
-            {
-                <option value="@item.IdTipoCuenta">@item.Nombre</option>
-            }
-        </select>
-        <input type="hidden" id="valorinput" />
-    </div>
-    <div id="cuerpo">
+                         <div class="row">
+                            <label>Tipo Cuenta</label>
+                            <select id="seleccion" onchange="ddlselect();" class="form-control" name="TipoCuentaId">
+                            <option value="value">Seleccione Tipo Cuenta</option>
+                            @foreach (var item in ViewBag.TipoCuenta)
+                            {
+                             <option value="@item.IdTipoCuenta">@item.Nombre</option>
+                            }
+                            </select>
+                            <input type="hidden" id="valorinput" />
+                          </div>
+                         <div id="cuerpo">
 
-    </div>
+                         </div>
+
+                        
+                        <p>
+
+                        </p>
+                       <div class="row">
+                         <button class="btn btn-primary">Guardar</button>
+                       </div>
+                        <p>
+
+                        </p>
+                       <div class="row">
+                       <a class="btn btn-primary" href="/cuenta/Index">Cancelar</a>
+                       </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
 
 
-    <div class="form-group">
-        <button class="btn btn-primary">Guardar</button>
-    </div>
-</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<form action="/Cuenta/Crear" method="post">
+
+
+
+        <div class="form-group">
+            <label>Tipo Cuenta</label>
+            <select id="seleccion" onchange="ddlselect();" class="form-control" name="TipoCuentaId">
+                <option value="value">Seleccione Tipo Cuenta</option>
+                @foreach (var item in ViewBag.TipoCuenta)
+                {
+                    <option value="@item.IdTipoCuenta">@item.Nombre</option>
+                }
+            </select>
+            <input type="hidden" id="valorinput" />
+        </div>
+        <div id="cuerpo">
+
+        </div>
+
+
+        <div class="form-group">
+            <button class="btn btn-primary">Guardar</button>
+        </div>
+        <div class="form-group">
+            <a class="btn btn-primary" href="/cuenta/Index">Cancelar</a>
+        </div>
+    </form>*@
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
@@ -34,12 +35,23 @@ namespace Proyecto.Models
         public List<CuentaEntidadEmisora> CuentaEntidadEmisora { get; set; }
         //
         public List<CuentaMetodoPago> CuentaMetodoPago { get; set; }
+        //
+        public List<Transferencia> TransferenciasComoOrigen { get; set; }
+        public List<Transferencia> TransferenciasComoDestino { get; set; }
+        public List<Transferencia> Transferencias {
+            get
+            {
+                var TodasTransferencias = TransferenciasComoOrigen.Concat(TransferenciasComoDestino);
+                return TodasTransferencias.ToList();
+            }
+         }
 
         //saldo calcular gastos
         public decimal SaldoFinal { 
             get 
             {
-                return SaldoInicial - TotalGastos;
+                return SaldoInicial - TotalGastos + TotalTrasferencias;
+
             } 
         }
         public decimal TotalGastos
@@ -49,11 +61,26 @@ namespace Proyecto.Models
                 return Gastos.Aggregate(0m, (total, gastoActual) => total + gastoActual.Monto);
             }
         }
+
+        public decimal TotalTrasferencias
+        {
+            get
+            {
+                var transferidoAMiCuenta = TransferenciasComoDestino
+                    .Aggregate(0m, (total, transferenciaActual) => total + transferenciaActual.Monto);
+                var transferidoHaciaOtrasCuentas = TransferenciasComoOrigen
+                    .Aggregate(0m, (total, transferenciaActual) => total + transferenciaActual.Monto);
+                return transferidoAMiCuenta - transferidoHaciaOtrasCuentas;
+            }
+
+        }
     
         public Cuenta()
         {
             CuentaEntidadEmisora = new List<CuentaEntidadEmisora>();
             CuentaMetodoPago = new List<CuentaMetodoPago>();
+            TransferenciasComoDestino = new List<Transferencia>();
+            TransferenciasComoOrigen = new List<Transferencia>();
         }
     }
 }

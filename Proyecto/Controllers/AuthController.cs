@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Proyecto.DB;
 using Proyecto.Extensions;
+using Proyecto.Models;
 
 namespace Proyecto.Controllers
 {
@@ -51,5 +52,30 @@ namespace Proyecto.Controllers
             HttpContext.SignOutAsync();
             return RedirectToAction("Login", "AUth");
         }
+
+
+        [HttpPost]
+        public ActionResult Crear(Usuario usuario )
+        {
+
+
+            var context = new AppPruebaContex();
+            context.Usuarios.Add(usuario);
+            context.SaveChanges();
+            return RedirectToAction("Login", "AUth");
+            
+            
+        }
+
+        [HttpGet]
+        public ActionResult Crear()
+        {
+
+
+            return View(new Usuario());
+        }
+
+
+
     }
 }

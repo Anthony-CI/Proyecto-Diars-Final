@@ -1,0 +1,148 @@
+﻿@using System.Linq
+@model Proyecto.Models.Cuenta
+@{
+    ViewData["Title"] = "Index";
+    //INDEX DE TRANSFERENCIA
+}
+
+
+
+
+    <header>
+
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+
+            </div>
+        </nav>
+
+        <section class=" features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="btn-group mr-1">
+                        <a type="button" class="btn btn-outline-primary" href="/Transferencias/Crear?cuentaId=@Model.IdCuenta" role="button">Agregar Transferencia</a>
+                    </div>
+
+                </div>
+            </div>
+            <p>
+
+            </p>
+            <p>
+
+            </p>
+            <div class="container">
+                <div class="row mr-0">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="btn-group mr-1">
+                                <button type="button" class="btn btn-block btn-success">Saldo @Model.SaldoFinal </button>
+                            </div>
+                        </div>
+
+
+                        <table class="table table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Cuenta Origen</th>
+                                    <th scope="col">Cuenta Destino</th>
+                                    <th scope="col">Monto</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var transferencia in Model.Transferencias)
+                                {
+                                <tr>
+
+                                    <td>@transferencia.Fecha</td>
+                                    <td>@transferencia.CuentaOrigenId</td>
+                                    <td>@transferencia.CuentaDestinoId</td>
+                                    <td>@transferencia.Monto</td>
+
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                        <div class="container">
+                            @*<div class="row">
+                                <div class="btn-group mr-1">
+                                    <button type="button" class="btn btn-block btn-success">Total @Model.TotalTrasferencias </button>
+                                </div>
+                            </div>*@
+                            <p>
+
+                            </p>
+                            <div class="row">
+                                <a class="btn btn-primary" href="/cuenta/Index">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div>
+    <a class="btn btn-primary" href="/Transferencias/Crear?cuentaId=@Model.IdCuenta" role="button">Agregar Transferencias</a>
+</div>
+
+@Model.SaldoFinal
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Cuenta Origen</th>
+                <th scope="col">Cuenta Destino</th>
+                <th scope="col">Monto</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var transferencia in Model.Transferencias)
+            {
+                <tr>
+                    <td>@transferencia.IdTransferencia</td>
+                    <td>@transferencia.Fecha</td>
+                    <td>@transferencia.CuentaOrigenId</td>
+                    <td>@transferencia.CuentaDestinoId</td>
+                    <td>@transferencia.Monto</td>
+
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+
+@Model.TotalGastos
+
+<div class="form-group">
+    <a class="btn btn-primary" href="/cuenta/Index">Cancelar</a>
+</div>*@
+
+
